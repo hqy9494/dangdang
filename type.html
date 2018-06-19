@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/type.css">
+    <script>
+        window.onload = window.onresize = function() {
+            var size = document.documentElement.clientWidth; 
+            size = size>640?640:size;
+            var s = document.querySelector('html').style.fontSize = size/10 + "px";
+            console.log(document.querySelector('html').style.fontSize);
+        }
+       
+    </script>
+</head>
+<body>
+    <div class="contain">
+        <header>
+            <a href="index.html" class="glyphicon glyphicon-menu-left"></a>
+            <a href="" class="glyphicon glyphicon-option-horizontal"></a>
+            <form action="">
+                <span class="glyphicon glyphicon-search"></span>
+                <input type="text" class="col-xs-12" placeholder="搜索商品/店铺/种类">
+                <!-- <ul>
+                    <p>输入关键字索检</p>
+                    <li>1132</li>
+                    <li>1132</li>
+                    <li>1132</li>
+                    <li>1132</li>
+                    <li>1132</li>
+                </ul> -->
+            </form>
+        </header>
+        <main class="clearfix">
+            <div class="swiper-container left col-xs-3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide selected"><span>少儿图书</span></div>
+                    <div class="swiper-slide"><span>文学小说</span> </div>
+                    <div class="swiper-slide"><span>教育考试</span></div>
+                    <div class="swiper-slide"><span>经济管理</span></div>
+                    <div class="swiper-slide"><span>人文社科</span></div>
+                    <div class="swiper-slide"><span>艺术绘画</span></div>
+                    <div class="swiper-slide"><span>IT科技</span></div>
+                    <div class="swiper-slide"><span>励志成功</span></div>
+                    <div class="swiper-slide"><span>生活休闲</span></div>
+                    <div class="swiper-slide"><span>进口原版</span></div>
+                    <div class="swiper-slide"><span>科普读物</span></div>
+                    <div class="swiper-slide"><span>保健养生</span></div>
+                </div>
+            </div>
+            <div class="swiper-container right col-xs-9">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="page show">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/1-1.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-2.jpg" alt="" class="col-xs-12">
+                                <p>少年读史记</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-3.jpg" alt="" class="col-xs-12">
+                                <p>少儿阅读</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-4.jpg" alt="" class="col-xs-12">
+                                <p>少儿动漫</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-5.jpg" alt="" class="col-xs-12">
+                                <p>少年轻狂</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-6.jpg" alt="" class="col-xs-12">
+                                <p>少了一点</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-7.jpg" alt="" class="col-xs-12">
+                                <p>少林寺</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-8.jpg" alt="" class="col-xs-12">
+                                <p>少之又少</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-9.jpg" alt="" class="col-xs-12">
+                                <p>少不了你</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-10.jpg" alt="" class="col-xs-12">
+                                <p>少见多怪</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-11.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-12.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-13.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-14.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-15.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/1-16.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-1.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-2.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a>
+                            
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/2-1.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/2-2.jpg" alt="" class="col-xs-12">
+                                <p>少儿图书</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/2-1.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-2.jpg" alt="" class="col-xs-12">
+                                <p>文史鉴赏</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-3.jpg" alt="" class="col-xs-12">
+                                <p>文化之旅</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-4.jpg" alt="" class="col-xs-12">
+                                <p>文明礼貌</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-5.jpg" alt="" class="col-xs-12">
+                                <p>文过饰非</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-6.jpg" alt="" class="col-xs-12">
+                                <p>文明之光</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-7.jpg" alt="" class="col-xs-12">
+                                <p>文字的魅力</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-8.jpg" alt="" class="col-xs-12">
+                                <p>文盲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-9.jpg" alt="" class="col-xs-12">
+                                <p>文不对题</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-10.jpg" alt="" class="col-xs-12">
+                                <p>文字游戏</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-11.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-12.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-13.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-14.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-10.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-3.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/2-4.jpg" alt="" class="col-xs-12">
+                                <p>文学小说</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-1.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-2.jpg" alt="" class="col-xs-12">
+                                <p>教学之道</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-3.jpg" alt="" class="col-xs-12">
+                                <p>教与学</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-4.jpg" alt="" class="col-xs-12">
+                                <p>教你做人</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-5.jpg" alt="" class="col-xs-12">
+                                <p>教育学</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-6.jpg" alt="" class="col-xs-12">
+                                <p>教育论</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-7.jpg" alt="" class="col-xs-12">
+                                <p>教室里的时光</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-8.jpg" alt="" class="col-xs-12">
+                                <p>教书育人</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-9.jpg" alt="" class="col-xs-12">
+                                <p>教务管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-10.jpg" alt="" class="col-xs-12">
+                                <p>教义</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-11.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-12.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-13.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-14.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-15.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-10.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/3-1.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-2.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-3.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-14.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/3-15.jpg" alt="" class="col-xs-12">
+                                <p>教育考试</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/4-1.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-2.jpg" alt="" class="col-xs-12">
+                                <p>经济学初章</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/4-3.jpg" alt="" class="col-xs-12">
+                                <p>经营有道</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-4.jpg" alt="" class="col-xs-12">
+                                <p>经世之道</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-5.jpg" alt="" class="col-xs-12">
+                                <p>经济犯罪</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-6.jpg" alt="" class="col-xs-12">
+                                <p>经商之路</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/4-7.jpg" alt="" class="col-xs-12">
+                                <p>经济100分</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-8.jpg" alt="" class="col-xs-12">
+                                <p>经济导论</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-9.jpg" alt="" class="col-xs-12">
+                                <p>经典</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-10.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/4-11.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-12.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-13.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-14.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-15.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/4-16.jpg" alt="" class="col-xs-12">
+                                <p>经济管理</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/5-1.jpg" alt="" class="col-xs-12">
+                                <p>人文社科</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-2.jpg" alt="" class="col-xs-12">
+                                <p>人文艺术</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-3.jpg" alt="" class="col-xs-12">
+                                <p>人民的名义</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-4.jpg" alt="" class="col-xs-12">
+                                <p>人民智慧</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/5-5.jpg" alt="" class="col-xs-12">
+                                <p>人外有人</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-6.jpg" alt="" class="col-xs-12">
+                                <p>人言可畏</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-7.jpg" alt="" class="col-xs-12">
+                                <p>人事管理</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-8.jpg" alt="" class="col-xs-12">
+                                <p>人的动能</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-9.jpg" alt="" class="col-xs-12">
+                                <p>人事部</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-10.jpg" alt="" class="col-xs-12">
+                                <p>人</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-11.jpg" alt="" class="col-xs-12">
+                                <p>人文社科</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-12.jpg" alt="" class="col-xs-12">
+                                <p>人文社科</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-13.jpg" alt="" class="col-xs-12">
+                                <p>人文社科</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/5-14.jpg" alt="" class="col-xs-12">
+                                <p>人文社科</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/6-1.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-2.jpg" alt="" class="col-xs-12">
+                                <p>艺术</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-3.jpg" alt="" class="col-xs-12">
+                                <p>艺高人胆大</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-4.jpg" alt="" class="col-xs-12">
+                                <p>艺不自卖</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-5.jpg" alt="" class="col-xs-12">
+                                <p>艺术之路</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-6.jpg" alt="" class="col-xs-12">
+                                <p>艺术之旅</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-7.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-8.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-9.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-10.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/6-11.jpg" alt="" class="col-xs-12">
+                                <p>艺术绘画</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/7-1.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-2.jpg" alt="" class="col-xs-12">
+                                <p>IT行业</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-3.jpg" alt="" class="col-xs-12">
+                                <p>IT艺术之路</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-4.jpg" alt="" class="col-xs-12">
+                                <p>IT秒懂它</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-5.jpg" alt="" class="col-xs-12">
+                                <p>IT最前沿</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-6.jpg" alt="" class="col-xs-12">
+                                <p>IT资讯</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-7.jpg" alt="" class="col-xs-12">
+                                <p>IT最没用</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-8.jpg" alt="" class="col-xs-12">
+                                <p>IT鬼知道</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-9.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-10.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-11.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-12.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-13.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/7-14.jpg" alt="" class="col-xs-12">
+                                <p>IT科技</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/8-1.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-2.jpg" alt="" class="col-xs-12">
+                                <p>励志选集</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-3.jpg" alt="" class="col-xs-12">
+                                <p>励志故事</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-4.jpg" alt="" class="col-xs-12">
+                                <p>励精图治</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-5.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-6.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/8-7.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-8.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-9.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-10.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-11.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-12.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-13.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/8-14.jpg" alt="" class="col-xs-12">
+                                <p>励志成功</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/9-1.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-2.jpg" alt="" class="col-xs-12">
+                                <p>生活</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-3.jpg" alt="" class="col-xs-12">
+                                <p>生活一点通</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/9-4.jpg" alt="" class="col-xs-12">
+                                <p>生龙活虎</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-5.jpg" alt="" class="col-xs-12">
+                                <p>生命</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-6.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/9-7.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-8.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-9.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-10.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-11.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-12.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/9-13.jpg" alt="" class="col-xs-12">
+                                <p>生活休闲</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/10-1.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-2.jpg" alt="" class="col-xs-12">
+                                <p>进口文集</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-3.jpg" alt="" class="col-xs-12">
+                                <p>进口食品</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/10-4.jpg" alt="" class="col-xs-12">
+                                <p>进行曲杂选</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-5.jpg" alt="" class="col-xs-12">
+                                <p>进退两难</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-6.jpg" alt="" class="col-xs-12">
+                                <p>进步</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-7.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-8.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-9.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-10.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-11.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-12.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/10-13.jpg" alt="" class="col-xs-12">
+                                <p>进口原版</p>
+                            </a>
+                        </div>
+                        <div class="page">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/11-1.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-2.jpg" alt="" class="col-xs-12">
+                                <p>科普讲座</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-3.jpg" alt="" class="col-xs-12">
+                                <p>科普杂谈</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/11-4.jpg" alt="" class="col-xs-12">
+                                <p>科学前沿</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-5.jpg" alt="" class="col-xs-12">
+                                <p>科技探索</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-6.jpg" alt="" class="col-xs-12">
+                                <p>科技之光</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-7.jpg" alt="" class="col-xs-12">
+                                <p>科学家</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-8.jpg" alt="" class="col-xs-12">
+                                <p>科目一</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-9.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-10.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-11.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-12.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-13.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/11-14.jpg" alt="" class="col-xs-12">
+                                <p>科普读物</p>
+                            </a>
+                            
+                        </div>
+                        <div class="page ">
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/12-1.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-2.jpg" alt="" class="col-xs-12">
+                                <p>保健常识</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-3.jpg" alt="" class="col-xs-12">
+                                <p>保健知多少</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-4.jpg" alt="" class="col-xs-12">
+                                <p>保护环境</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/12-5.jpg" alt="" class="col-xs-12">
+                                <p>保家卫国</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-6.jpg" alt="" class="col-xs-12">
+                                <p>保证</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/12-7.jpg" alt="" class="col-xs-12">
+                                <p>保姆</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-8.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/12-9.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-10.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a>
+                            <a href="" class="col-xs-4 book">
+                                <img src="img/type/12-11.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a><a href="" class="col-xs-4 book">
+                                <img src="img/type/12-12.jpg" alt="" class="col-xs-12">
+                                <p>养生保健</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </main>
+        <footer>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-home"></span>
+                            <p>首页</p>
+                        </a>
+                    </li>
+                    <li class="live">
+                        <a href="">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                            <p>分类</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            <p>购物车</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <p>个人中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+    </div>
+    
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var lefts = document.querySelectorAll(".left .swiper-slide");
+        var pages = document.querySelectorAll(".right .page");
+        var wrapper = document.querySelector(".right .swiper-wrapper");
+        var mySwiper1 = new Swiper('.swiper-container.left', {
+            pagination: '.swiper-container.left',
+            // paginationClickable: true,
+            direction : 'vertical',
+            autoplay: 5000,//可选选项，自动滑动
+            slidesPerView: 11,
+            paginationClickable: true,
+        })
+        
+
+
+
+         var swiper2 = new Swiper('.swiper-container.right', {
+            // pagination: '.swiper-container.right',
+              
+                scrollbar: '.swiper-scrollbar',
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                mousewheelControl: true,
+                freeMode: true,
+                freeModeMomentumBounceRatio : 5,
+                roundLengths : true,
+            });
+
+      
+        function noActive() {
+            for(var i=0;i<lefts.length;i++){
+                lefts[i].classList.remove("selected");
+                pages[i].classList.remove("show");
+                wrapper.style.transform = "none";
+            }
+        }
+        function addIndex() {
+            for(i=0;i<lefts.length;i++) {
+                lefts[i].index = i;
+            }
+        }
+        function addActive() {
+            for(var i=0;i<pages.length;i++){
+                lefts[i].onclick=function() {
+                    noActive();
+                    this.classList.toggle('selected');
+                    pages[this.index].classList.toggle("show");
+                }
+            }
+        }
+        addIndex();
+        addActive();
+        // console.log(pages);
+        var form = document.querySelector('header form');
+        var type = [
+            '少儿图书','少年读史记','少儿阅读','少儿动漫','少年轻狂','少了一点','少林寺','少之又少','少不了你','少见多怪',
+            '文学小说','文史鉴赏','文化之旅','文明礼貌','文过饰非','文明之光','文字的魅力','文盲','文不对题','文字游戏',
+            '教育考试','教学之道','教与学','教你做人','教育学','教育论','教室里的时光','教书育人','教义','教务管理',
+            '经济管理','经济学初章','经营有道','经世之道','经典','经济管理','经济犯罪','经商之路 ','经济导论','经济100分',
+            '人文社科','人文艺术','人民的名义','人民智慧','人外有人','人言可畏','人事部','人事管理','人','人的动能',
+            '艺术绘画','艺术人生','艺高人胆大','艺术','艺不自卖','艺术之路','艺术之旅','','','',
+            'IT科技','IT行业','IT艺术之路','IT科技','IT秒懂它','IT资讯','IT最前沿','IT','IT最没用','IT鬼知道',
+            '励志成功','励志选集','励志故事','励精图治','','','','','','',
+            '生活休闲','生活一点通','生活','生龙活虎','生命','','','','','',
+            '进口原版','进口食品','进口文集','进退两难','进步','进行曲杂选','','','','',
+            '科普读物','科技探索','科学前沿','科普讲座','科普杂谈','科技之光','科目一','科学家','','',
+            '保健养生','保健常识','保健知多少','保护环境','保家卫国','保证','保姆','','',''];
+        form.children[1].onkeyup = function() {
+            if(form.children[2]){
+                form.removeChild(form.children[2]);
+            }
+            if(form.children[1].value == ''){
+                return;
+            }
+            var ul = document.createElement('ul');
+            var p = document.createElement('p');
+            p.innerText = '查询结果如下：';
+            ul.appendChild(p);
+            for(let i=0;i<type.length;i++){
+                if(type[i].indexOf(this.value)===0){
+                    let li = document.createElement('li');
+                    li.innerHTML = type[i];
+                    li.onclick = function() {
+                        form.children[0].value = type[i];
+                        form.removeChild(form.children[2]);
+                        noActive();
+                        lefts[parseInt(i/10)].classList.toggle('selected');
+                        pages[parseInt(i/10)].classList.toggle("show");
+                    }
+                    ul.appendChild(li);
+                }
+                // console.log(ul);
+            }
+            ul.innerText !='' &&form.appendChild(ul);
+            
+        }
+    </script>
+</body>
+</html>

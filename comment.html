@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+    </style>
+    <script>
+        window.onload = window.onresize = function() {
+            var size = document.documentElement.clientWidth;
+            size = size>640?640:size;
+            document.querySelector('html').style.fontSize = size/10 + "px";
+            console.log(document.querySelector('html').style.fontSize);
+        }
+    </script>
+</head>
+<body>
+    <div class="contain">
+        <header></header>
+        <main>
+            <div class="display">
+                <div class="img"></div>
+                <div class="content"></div>
+            </div>
+            <div class="list">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>

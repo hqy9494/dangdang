@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/shopcar.css">
+        <script>
+            window.onload = window.onresize = function() {
+                var size = document.documentElement.clientWidth;
+                size = size>640?640:size;
+                document.querySelector('html').style.fontSize = size/10 + "px";
+            }
+        </script>
+    </head>
+<body>
+    <div class="content">
+        <header>
+            <a href="" class="glyphicon glyphicon-chevron-left"></a>
+            <span>购物车</span>
+            <button>编辑</button>
+        </header>
+        <main>
+            <p>
+                <span class="circle"></span> 全选
+            </p>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            <span class="circle"></span>
+                            <img src="img/type/1-1.jpg" alt="">
+                        </dt>
+                        <dd>
+                            <p class="book">解忧杂货店</p>
+                            <p class="prise">￥169</p>
+                            <p class="total">小计：<span>￥169</span></p>
+                            <div class="num">
+                                <button>-</button>
+                                <input type="number" value="1">
+                                <button>+</button>
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+            <div class="count">
+                <div id="tprise">总计：￥<strong>169</strong> </div>
+                <div id="ok">确认</div>
+            </div>
+        </main>
+        <footer>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-home"></span>
+                            <p>首页</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                            <p>分类</p>
+                        </a>
+                    </li>
+                    <li class="live">
+                        <a href="">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                            <p>购物车</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <p>个人中心</p>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
+    </div>
+    
+</body>
+</html>

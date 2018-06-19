@@ -1,0 +1,115 @@
+*{margin:0;padding:0;}
+.content{
+    width: 10rem;
+    margin: 0 auto;
+}
+header {
+    background: #eee;
+    position: relative;
+}
+header>a.glyphicon.glyphicon-chevron-left {
+    display: block;
+    font-size: .6rem;
+    text-decoration: none;
+    color: #333;
+    position: absolute;
+    top: 0;
+    left: .078125rem;
+    line-height: 1rem;
+}
+header>p {
+    font-size: .4rem;
+    font-weight: bold;
+    color: #666;
+    text-align: center;
+    line-height: 1rem;
+    margin:0;
+}
+main {
+    width: 100%;
+}
+#change {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+}
+#change>li {
+    display: block;
+    width: 50%;
+    list-style: none;
+    text-align: center;
+    float: left;
+    color: #aaa;
+    line-height: .9rem;
+    font-size: .35rem;
+    border-bottom: .015625rem solid #ddd;
+}
+#change>li.active {
+    color: orangered;
+    border-bottom: .015625rem solid orangered;
+}
+main>p {
+    width: 94%;
+   border-bottom: 1px solid #ddd;
+   margin: 0 auto;
+   position: relative;
+   line-height: 1.09375rem;
+   padding: .3125rem 0;
+}
+main>p>label {
+    margin: 0 .25rem;
+    color: #666;
+    line-height: .640625rem;
+}
+main>p>input {
+    width: 7.8rem;
+    height: .85rem;
+   padding-right: 1.66rem;
+   font-size: .5rem;
+   border: 0;
+    outline: none;
+    transform: translateY(.09rem)
+}
+main>p>span.x {
+    position: absolute;
+    top: .7rem;
+    left: 7.75rem;
+    color: #aaa;
+    display: none;
+}
+#eye {
+    position: absolute;
+    top:.7rem;
+    left: 8.3rem;
+    color: #aaa;
+    font-size: .45rem;
+}
+#eye.black {
+    color: black;
+}
+.glyphicon.glyphicon-remove {
+    color: red;
+    position: absolute;
+    top: .64rem;
+    right: 0;
+    font-size: .55rem;
+    vertical-align: middle;
+    display: none;
+}
+.glyphicon.glyphicon-ok {
+    color: green;
+    position: absolute;
+    top: .64rem;
+    right: 0;
+    font-size: .55rem;
+    vertical-align: middle;
+    display: none;
+}
+
+#reg {
+    display: block;
+    height: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}

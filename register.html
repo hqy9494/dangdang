@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <script>
+        window.onload = window.onresize = function() {
+            var size = document.documentElement.clientWidth;
+            size = size>640?640:size;
+            document.querySelector('html').style.fontSize = size/10 + "px";
+            // console.log(document.querySelector('html').style.fontSize);
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <a class="glyphicon glyphicon-chevron-left"></a>
+            <p>登录/注册</p>
+        </header>
+        <main>
+            <ul id="change">
+                <li class="active">账号密码登录</li>
+                <li>短信验证码登录</li>
+            </ul>
+            <p>
+                <label for="user">账号</label>
+                <input type="text" id="user">
+                <span class="glyphicon glyphicon-remove-sign x" id="x1"></span>
+                <i class="glyphicon glyphicon-remove" id="b1"></i>
+            </p>
+            <p>
+                <label for="pwd">密码</label>
+                <input type="password" id="pwd">
+                <span class="glyphicon glyphicon-remove-sign x" id="x2"></span>
+                <span class="glyphicon glyphicon-eye-close" id="eye"></span>
+                <i class="glyphicon glyphicon-remove" id="b2"></i>
+            </p>
+
+            <button id="reg">登录</button>
+            
+            
+        </main>
+    </div>
+    <script>
+        var eye = document.getElementById('eye');
+        var user = document.getElementById('user');
+        var pwd = document.getElementById('pwd');
+        var x1 = document.getElementById('x1');
+        var x2 = document.getElementById('x2');
+        var b1 = document.getElementById('b1');
+        var b2 = document.getElementById('b2');
+        var reg = document.getElementById('reg');
+        b1.index=user.index=0;
+        b2.index=pwd.index=1; 
+        reg.flag = false;
+        var json = [
+            {
+                'user':'1234',
+                'pwd':'5678',
+                'index':0
+            },{
+                'user':'abcd',
+                'pwd':'efgh',
+                'index':1
+            },{
+                'user':'8888',
+                'pwd':'8888',
+                'index':2
+            }
+        ]
+        eye.flag = false;
+        eye.onclick = function() {
+            if(this.flag){
+                this.flag = false;
+                this.classList = 'glyphicon glyphicon-eye-close'
+                pwd.type = "password";
+            }else {
+                this.flag = true;
+                this.classList = 'glyphicon glyphicon-eye-open black';
+                pwd.type = "text";
+            }
+        }
+        user.onkeyup = function() {
+            if(user.value!=''){
+                x1.style.display = 'block';
+            }else{
+                x1.style.display = 'none';
+                b1.style.display = 'none';
+            }
+        }
+        pwd.onkeyup = function() {
+            if(pwd.value!=''){
+                x2.style.display = 'block';
+            }else{
+                x2.style.display = 'none';
+                b2.style.display = 'none';
+            }
+        }
+        x1.onclick = function() {
+            user.value = '';
+            this.style.display = 'none';
+            b1.style.display ='none';
+        }
+        x2.onclick = function() {
+            pwd.value = '';
+            this.style.display = 'none';
+            b2.style.display = 'none';
+        }
+        user.onblur = function() {
+           var i = each(json,user);
+           bool(i,b1);
+        }
+        pwd.onblur = function () { 
+            var i = each(json,pwd);
+            bool(i,b2);
+         }
+        function each(arr,ele) {
+            var i=0;
+            arr.forEach(e =>{
+                if(ele.value==e[ele.id]){
+                    if(ele.id=='user'){    
+                        i++;
+                    }else if(ele.id==pwd){
+                        if(user.value==e['user']){
+                            i++;
+                        }
+                    }
+                }
+                
+            })
+            console.log(i);
+            return i;
+        }
+
+        function bool(i,ele){
+           if(i=0){
+                ele.style.display = 'block';
+                ele.classList = 'glyphicon glyphicon-remove';
+           }else if(i>0){
+                ele.style.display = 'block';
+                ele.classList = 'glyphicon glyphicon-ok';
+           }else if(i<0){
+                ele.style.display = 'none';
+           }
+
+        }
+    </script>
+</body>
+</html>
